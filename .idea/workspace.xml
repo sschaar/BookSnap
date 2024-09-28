@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9f2eb2-ceab-4cc8-9ae5-794c70797d14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book_classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4f9f2eb2-ceab-4cc8-9ae5-794c70797d14" name="Changes" comment="Model created and saved">
+      <change afterPath="$PROJECT_DIR$/load_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/print_subfolder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_clssification.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,21 +24,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sschaar"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sschaar&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sschaar/BookSnap.git",
-    "accountId": "5c41a11d-2ee8-4f5b-867b-a31cf475b9ec"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sschaar/BookSnap.git&quot;,
+    &quot;accountId&quot;: &quot;5c41a11d-2ee8-4f5b-867b-a31cf475b9ec&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2mfAuauZFv5cdOzYqpCY914eUiE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,6 +49,8 @@
   "keyToString": {
     "Python.book_classification.executor": "Run",
     "Python.book_clssification.executor": "Run",
+    "Python.load_model.executor": "Run",
+    "Python.print_subfolder.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -77,14 +78,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727457480110</updated>
-      <workItem from="1727457488495" duration="9301000" />
+      <workItem from="1727457488495" duration="10144000" />
+      <workItem from="1727517057418" duration="1029000" />
     </task>
+    <task id="LOCAL-00001" summary="Model created and saved">
+      <option name="closed" value="true" />
+      <created>1727467010570</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727467010570</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Model created and saved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model created and saved" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BookSnap$load_model.coverage" NAME="load_model Coverage Results" MODIFIED="1727517819902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BookSnap$print_subfolder.coverage" NAME="print_subfolder Coverage Results" MODIFIED="1727518081713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BookSnap$book_classification.coverage" NAME="book_classification Coverage Results" MODIFIED="1727465197557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BookSnap$book_clssification.coverage" NAME="book_clssification Coverage Results" MODIFIED="1727458824433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
