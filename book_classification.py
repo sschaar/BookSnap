@@ -1,6 +1,6 @@
 import os
+import numpy as np
 import tensorflow as tf
-from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 
 # Schritt 1: Pfad zum Ordner, in dem die Bilder gespeichert sind
 image_folder = 'images'  # Pfad zu den strukturierten Bildern
+test_folder = 'test'      # Pfad zu den Testbildern
 
 # Schritt 2: Bildpfade und Titel aus dem Ordner extrahieren
 def load_images_from_folder(image_folder):
@@ -88,7 +89,7 @@ model.compile(optimizer='adam',
 model.summary()
 
 # Schritt 12: Training des Modells
-epochs = 300
+epochs = 400
 history = model.fit(train_generator, epochs=epochs)
 
 # Schritt 13: Ergebnisse anzeigen
@@ -111,3 +112,28 @@ plt.show()
 
 # Schritt 14: Modell speichern
 model.save('book_cover_recognition_model.h5')
+
+# Schritt 15: Vorhersagen für Testbilder
+def predict_titles(test_folder):
+    for class_name in os.listdir(test_folder):
+        class_folder = os.path.join(test_folder, class_name)
+
+        # Überprüfen, ob es ein Ordner ist
+        if os.path.isdir(class_folder):
+            for img_name in os.listdir(class_folder):
+                img_path = os.path.join(class_folder, img_name)
+
+                # Überprüfen, ob es eine Bilddatei ist
+                if img_name.lower().endswith(('png', 'jpg', 'jpeg')):
+                    img = tf.keras.preprocessing.image.load_img(img_path, target_size=(img_height, img_width))
+                    img_array = tf.keras.preprocessing.image.img_to_array(img) / 255.0  # Normalisierung
+                    img_array = np.expand_dims(img_array, axis=0)  # Batch-Dimension hinzufügen
+
+                    predictions = model.predict(img_array)
+                    predicted_class_index = np.argmax(predictions, axis=1)[0]
+                    predicted_title = class_names[predicted_class_index]  # Titel zurückgeben
+
+                    print(f'Bild: {img_name}, Vorhergesagter Titel: {predicted_title} (Ordner: {class_name})')
+
+# Vorhersagen für die Testbilder durchführen
+predict_titles(test_folder)
