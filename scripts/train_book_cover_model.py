@@ -66,7 +66,7 @@ model.compile(optimizer='adam',
 model.summary()
 
 # Step 7: Train the model
-epochs = 50
+epochs = 10
 history = model.fit(
     train_generator,
     validation_data=test_generator,

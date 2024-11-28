@@ -8,8 +8,8 @@ class_names = {0: "Berserk", 1: "Monster", 2: "Neon Genesis Evangelion"}
 
 # Basispfad zum Modellverzeichnis und Angabe der Modellversion
 model_base_path = '../models/trained_model'
-model_version = 'v1'  # Hier kannst du die gewünschte Version anpassen
-model_path = os.path.join(model_base_path, f'book_cover_classification_model_{model_version}.h5')
+model_version = '2'  # Hier kannst du die gewünschte Version anpassen
+model_path = os.path.join(model_base_path, f'book_cover_classification_model_v{model_version}.h5')
 
 # Prüfen, ob das Modell existiert
 if not os.path.isfile(model_path):
